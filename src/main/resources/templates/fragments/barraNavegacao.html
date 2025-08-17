@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	 <link rel="stylesheet" th:href="@{/css/menu.css}">
+</head>
+<body>
+     <div th:fragment="navbar" class="menu">
+		<div class="sidenav">
+				
+				
+			<!-- menu de curso -->
+				<button class="dropdown-btn">
+                    empregado &#x25BC;
+				</button>
+				<div class="dropdown-container">
+					<!-- links para cadastrar -->
+                    <a th:href="@{/empregado/form}">Cadastrar</a> 
+					
+					<!-- links para listar -->
+                    <a	th:href="@{/empregado/list}">Listar</a>
+				</div>
+				
+
+    </div>
+		 <script src="/js/menu.js"></script>
+	<div th:insert="fragments/mensagem :: message"></div>
+
+</body>
+</html>
