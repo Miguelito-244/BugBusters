@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+     <div th:fragment="formEmpregado" class="form">
+
+        <label for="idNome">Nome</label>
+        <input type="text" id="idNome" th:field="*{Nome}" placeholder="informe seu nome" required>
+        <br>
+
+        <label for="idEmail">Email:</label>
+        <input type="text" id="idEmail" th:field="*{email}" placeholder="Informe seu Email" required/>
+            <br>
+
+        <label for="idCargo">Cargo:</label>
+        <input type="text" id="idCargo" th:field="*{cargo}" placeholder="Informe seu Cargo" required/>
+            <br>
+
+        <label for="idSalario">Salario:</label>
+        <input type="number" id="idSalario" th:field="*{salario}" placeholder="Informe seu salario" required/>
+            <br>
+
+        <label for="idDataAdmicao">Data de Admição:</label>
+        <input type="date" id="idDataAdmicao" th:field="*{dataAdmissao}" placeholder="Informe sua de admição" required/>
+        <br>
+
+
+    </div>
+    
+</body>
+</html>
